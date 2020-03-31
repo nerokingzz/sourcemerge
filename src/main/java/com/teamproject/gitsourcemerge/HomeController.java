@@ -36,4 +36,13 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	//chatbot 페이지로 이동하는 메소드
+	@RequestMapping(value = "/chat.do", method = RequestMethod.GET)
+	public String chat(Model model) {
+		
+		return "chat/chat";
+	}
+	
+	
 }
