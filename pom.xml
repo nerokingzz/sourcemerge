@@ -236,6 +236,16 @@
 		<artifactId>jackson-databind</artifactId>
 		<version>2.10.2</version>
 	</dependency>
+
+
+	<!-- 20200331  -->
+	<dependency>
+		<groupId>com.ibm.watson</groupId>
+		<artifactId>ibm-watson</artifactId>
+		<version>8.3.1</version>
+	</dependency>
+	
+	
 		
 		
 		<!-- chatbot 구현을 위해 필요한 dependency 끝 -->
