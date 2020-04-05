@@ -18,8 +18,8 @@
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     	<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
     	<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
-    	<property name="username" value="system" />
-    	<property name="password" value="oracle" />
+    	<property name="username" value="bookphago" />
+    	<property name="password" value="bookphago" />
 	</bean>
 	
 	<!-- SqlSessionFactory 객체 주입 -->

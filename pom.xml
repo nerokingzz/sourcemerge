@@ -147,6 +147,108 @@
     		<artifactId>spring-test</artifactId>
     		<version>${org.springframework-version}</version>
 		</dependency>
+		
+		
+		
+		<!-- chatbot 구현을 위해 필요한 dependency 시작 -->
+		
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.10</version>
+		    <scope>provided</scope>
+		</dependency>
+
+
+
+	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-messaging</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- /////////////////////////////////// -->
+
+
+	<!-- Web Socket Dependency -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-websocket</artifactId>
+		<version>5.2.4.RELEASE</version>
+	</dependency>
+	<!-- /////////////////////////////////// -->
+
+	<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+	<dependency>
+		<groupId>com.googlecode.json-simple</groupId>
+		<artifactId>json-simple</artifactId>
+		<version>1.1.1</version>
+	</dependency>
+
+
+
+	<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+	<dependency>
+		<groupId>commons-codec</groupId>
+		<artifactId>commons-codec</artifactId>
+		<version>1.10</version>
+	</dependency>
+
+
+
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20180813</version>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/javax-websocket-client-impl -->
+	<dependency>
+		<groupId>org.eclipse.jetty.websocket</groupId>
+		<artifactId>javax-websocket-client-impl</artifactId>
+		<version>9.4.26.v20200117</version>
+	</dependency>
+
+
+	<dependency>
+		<groupId>org.apache.tomcat.embed</groupId>
+		<artifactId>tomcat-embed-core</artifactId>
+		<version>8.0.8</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.tomcat.embed</groupId>
+		<artifactId>tomcat-embed-websocket</artifactId>
+		<version>8.0.8</version>
+		<scope>test</scope>
+	</dependency>
+
+
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.10.2</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.10.2</version>
+	</dependency>
+
+
+	<!-- 20200331  -->
+	<dependency>
+		<groupId>com.ibm.watson</groupId>
+		<artifactId>ibm-watson</artifactId>
+		<version>8.3.1</version>
+	</dependency>
+	
+	
+		
+		
+		<!-- chatbot 구현을 위해 필요한 dependency 끝 -->
 		        
 	</dependencies>
     <build>

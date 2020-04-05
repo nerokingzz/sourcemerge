@@ -2,5 +2,17 @@
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
 <configuration>
+	
+	<typeAliases>
+		<typeAlias type="com.teamproject.gitsourcemerge.com.esta.vo.ComInfoVO" alias="comInfoVo"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="./mappers/com/esta/ComEstaMapper.xml"></mapper>
+	</mappers>
+
 </configuration>
+

@@ -12,5 +12,10 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<p>  jongdae commit111</p>
+
+<a href="com_esta_form.do">커뮤니티 신청</a>
+<a href="com_esta_request_list.do">커뮤니티 신청 내역</a>
+
 </body>
 </html>

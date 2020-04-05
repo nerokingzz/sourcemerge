@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com_esta">
+	
+	<!-- 개설정보 insert -->
+	<insert id="com_esta_insert" parameterType="comInfoVo">
+		<!-- 시퀀스 사용 -->
+		<selectKey keyProperty="community_id" resultType="integer" order="BEFORE">
+			SELECT seq_auto_increment.NEXTVAL FROM DUAL
+		</selectKey>
+		
+    	INSERT INTO M_COMMUNITY_INFO (community_id, community_name, community_establish_date, community_category, community_description, community_aim, community_member_count, community_establish_status, community_captain)
+    	VALUES (#{community_id}, #{community_name}, #{community_establish_date}, #{community_category}, #{community_description}, #{community_aim}, #{community_member_count}, #{community_establish_status}, #{community_captain})
+ 	</insert>
+ 	
+ 	<!-- 개설정보 select -->
+ 	<select id="com_esta_request_list" parameterType="hashmap" resultType="hashmap">
+ 		SELECT * FROM M_COMMUNITY_INFO
+ 		<where>
+ 			<if test="user_position != 'admin'">
+ 				community_captain = #{user_id}
+ 			</if>
+ 		</where>
+ 	</select>
+ 	
+ 	
+</mapper>
